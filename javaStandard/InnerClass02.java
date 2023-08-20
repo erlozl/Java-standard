@@ -27,7 +27,7 @@ class Outer2 {
 
 public class InnerClass02 {
     public static void main(String[] args) {
-        Outer2 oc = new Outer2();
+        Outer2 oc = new Outer2(); // 외부 클래스의 인스턴스를 먼저 생성해야 인스턴스 클래스의 인스턴스를 생성가능
         Outer2.InstanceInner ii = oc.new InstanceInner();
 
         System.out.println("ii.iv :" + ii.iv);
